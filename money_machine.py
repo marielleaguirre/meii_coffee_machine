@@ -8,9 +8,9 @@ class MoneyMachine:
         "pennies": 0.01
     }
 
-#     METHOD __init__():
-#         SET profit to 0
-#         SET money_received to 0
+    def __init__(self):
+        self.profit = 0
+        self.money_received = 0
 
 #     METHOD report():
 #         PRINT current profit with currency symbol
