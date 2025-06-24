@@ -39,9 +39,9 @@ while is_on:
     if user_choice == 'off':
         print('\033[31m<<THE END>>\033[m')
         is_on = False
-
-#    d. ELSE IF input is 'report':
-#        - Print coffee and money resource reports
+    elif user_choice == 'report':
+        coffee_maker.report()
+        money_machine.report()
 
 #    e. ELSE IF invalid choice:
 #        - Show error message
