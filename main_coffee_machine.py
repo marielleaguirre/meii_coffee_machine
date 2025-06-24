@@ -32,7 +32,10 @@ money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 is_on = True
 
-# WHILE is_on is True:
+while is_on:
+    welcome()
+    options = menu.get_items()
+    user_choice = str(input(f'What would you like?\nOptions ({options}): ')).strip().lower()
 #    a. Show welcome message
 #    b. Ask user for drink choice
 
