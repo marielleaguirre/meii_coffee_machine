@@ -11,13 +11,13 @@ class CoffeeMaker:
         print(f"Milk: {self.resources['milk']}ml")
         print(f"Coffee: {self.resources['coffee']}g")
 
-#     METHOD is_resource_sufficient(drink):
-#         SET can_make to True
-#         FOR each ingredient in drink:
-#             IF required amount > available amount:
-#                 PRINT "Sorry there is not enough [ingredient]"
-#                 SET can_make to False
-#         RETURN can_make
+    def is_resource_sufficient(self, drink):
+        can_make = True
+        for item in drink.ingredients:
+            if drink.ingredients[item] > self.resources[item]:
+                print(f"Sorry there is not enough {item}.")
+                can_make = False
+        return can_make
 
 #     METHOD make_coffee(order):
 #         FOR each ingredient in order:
