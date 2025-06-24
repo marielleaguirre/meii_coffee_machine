@@ -8,9 +8,13 @@ class MenuItem:
             "coffee": coffee
         }
 
-# CLASS Menu:
-#     METHOD __init__():
-#         CREATE a list of MenuItem objects: latte, espresso, cappuccino
+class Menu:
+    def __init__(self):
+        self.menu = [
+            MenuItem(name="latte", water=200, milk=150, coffee=24, cost=2.5),
+            MenuItem(name="espresso", water=50, milk=0, coffee=18, cost=1.5),
+            MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
+        ]
 
 #     METHOD get_items():
 #         SET options to an empty string
