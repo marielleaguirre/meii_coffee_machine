@@ -8,7 +8,24 @@ pygame.mixer.init()
 pygame.mixer.music.load("classical_music.mp3")
 pygame.mixer.music.play(-1) 
 
-# DEFINE welcome() to show greeting and menu
+def welcome():
+    print('''\033[33m
+             )))
+            (((
+          +------+
+          | .☘︎ ݁˖ |] - WELCOME TO THE MEII COFFEE MACHINE!
+          `------' 
+    
+          ------ MENU ------ 
+          Espresso ($1.50)
+          Latte ($2.50)
+          Cappuccino ($3.00)
+          ------------------
+    
+          PS: Type "report" at any moment
+          to check our resources available.
+          Type "off" to log out from the machine.\033[m
+        ''')
 
 # INITIALIZE core objects:
 #    - menu (Menu)
