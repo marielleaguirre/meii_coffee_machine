@@ -4,7 +4,9 @@ from money_machine import MoneyMachine
 from time import sleep
 import pygame
 
-# INITIALIZE pygame mixer and play background classical music
+pygame.mixer.init()
+pygame.mixer.music.load("classical_music.mp3")
+pygame.mixer.music.play(-1) 
 
 # DEFINE welcome() to show greeting and menu
 
