@@ -14,13 +14,7 @@ Welcome to the **Meii Coffee Machine**, a fun and immersive terminal-based coffe
 ```bash
 1. Clone or download the project
 2. Install pygame: pip install pygame
-3. Run the magic: python main_coffee_machine.py
-
-        へ  ♡ 
-     ૮ > <)    
-     / ⁻ ៸|   
-  乀(ˍ,ل ل    
-
+3. Run the magic: python main_coffee_machine.py  
 ```
 ## 🐾 Credits & Inspiration
 This project was heavily inspired by and referenced from:
