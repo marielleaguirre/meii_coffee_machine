@@ -6,8 +6,10 @@ class CoffeeMaker:
             "coffee": 500,
         }
 
-#     METHOD report():
-#         PRINT current amount of water, milk, and coffee
+    def report(self):
+        print(f"Water: {self.resources['water']}ml")
+        print(f"Milk: {self.resources['milk']}ml")
+        print(f"Coffee: {self.resources['coffee']}g")
 
 #     METHOD is_resource_sufficient(drink):
 #         SET can_make to True
