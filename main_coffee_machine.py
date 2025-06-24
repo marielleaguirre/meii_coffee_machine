@@ -36,12 +36,9 @@ while is_on:
     welcome()
     options = menu.get_items()
     user_choice = str(input(f'What would you like?\nOptions ({options}): ')).strip().lower()
-#    a. Show welcome message
-#    b. Ask user for drink choice
-
-#    c. IF input is 'off':
-#        - Print shutdown message
-#        - Set is_on to False to exit loop
+    if user_choice == 'off':
+        print('\033[31m<<THE END>>\033[m')
+        is_on = False
 
 #    d. ELSE IF input is 'report':
 #        - Print coffee and money resource reports
