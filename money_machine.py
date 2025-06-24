@@ -28,12 +28,12 @@ class MoneyMachine:
 
     def make_payment(self, cost):
         self.process_coins()
-#         IF money_received >= cost:
-#             CALCULATE change
-#             PRINT change returned
-#             ADD cost to profit
-#             RESET money_received to 0
-#             RETURN True
+        if self.money_received >= cost:
+            change = round(self.money_received - cost, 2)
+            print(f"Here is {self.CURRENCY}{change} in change.")
+            self.profit += cost
+            self.money_received = 0
+            return True
 #         ELSE:
 #             PRINT refund message
 #             RESET money_received to 0
