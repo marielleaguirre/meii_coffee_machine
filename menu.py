@@ -1,8 +1,12 @@
-# CLASS MenuItem:
-#     METHOD __init__(name, water, milk, coffee, cost):
-#         SET item name
-#         SET item cost
-#         SET ingredients as a dictionary of water, milk, coffee
+class MenuItem:
+    def __init__(self, name, water, milk, coffee, cost):
+        self.name = name
+        self.cost = cost
+        self.ingredients = {
+            "water": water,
+            "milk": milk,
+            "coffee": coffee
+        }
 
 # CLASS Menu:
 #     METHOD __init__():
