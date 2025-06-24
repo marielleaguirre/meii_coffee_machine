@@ -21,11 +21,10 @@ class MoneyMachine:
         Quarters ($0.25), dimes ($0.10)
         nickles ($0.05), pennies ($0.01)\033[m
         ''')
-#         FOR each coin type in COIN_VALUES:
-#             ASK user how many of that coin
-#             ADD total value of coins to money_received
-#         PRINT total money provided
-#         RETURN money_received
+        for coin in self.COIN_VALUES:
+            self.money_received += int(input(f"How many {coin}? Please: ")) * self.COIN_VALUES[coin]
+        print(f'You have provided: {self.CURRENCY}{self.money_received}')
+        return self.money_received
 
 #     METHOD make_payment(cost):
 #         CALL process_coins()
