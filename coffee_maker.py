@@ -26,6 +26,6 @@ class CoffeeMaker:
              )))
             (((
           +------+
-          | 𝒎𝒆𝒊𝒊 |] - Here's your {order.name}. Enjoy! :)
+          | 𝒎𝒆𝒊𝒊 |] - Here's your {order.name}. Enjoy! ᓚ₍⑅^..^₎♡
           `------'
         ''')
