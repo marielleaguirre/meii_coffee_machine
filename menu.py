@@ -22,8 +22,8 @@ class Menu:
                 options += f"{item.name}/"
             return options
 
-#     METHOD find_drink(order_name):
-#         FOR each item in the menu:
-#             IF item name matches order_name:
-#                 RETURN that item
-#         PRINT "Sorry that item is not available."
+    def find_drink(self, order_name):
+        for item in self.menu:
+            if item.name == order_name:
+                return item
+        print("Sorry that item is not available.")
