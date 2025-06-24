@@ -27,11 +27,10 @@ def welcome():
           Type "off" to log out from the machine.\033[m
         ''')
 
-# INITIALIZE core objects:
-#    - menu (Menu)
-#    - money_machine (MoneyMachine)
-#    - coffee_maker (CoffeeMaker)
-#    - is_on = True
+menu = Menu()
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+is_on = True
 
 # WHILE is_on is True:
 #    a. Show welcome message
