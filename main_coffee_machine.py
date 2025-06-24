@@ -49,9 +49,7 @@ while is_on:
         beverage = menu.find_drink(user_choice)
         sufficient_resources = coffee_maker.is_resource_sufficient(beverage)
         sufficient_money = money_machine.make_payment(beverage.cost)
-#        iv. If both checks pass:
-#            - Simulate coffee brewing with sleep
-#            - Make coffee
-#            - Show confirmation
-
-# END PROGRAM
+        if sufficient_resources and sufficient_money:
+            print('Thank you! Allow us to make your beverage now...')
+            coffee_maker.make_coffee(beverage)
+            sleep(5)
