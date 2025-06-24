@@ -45,10 +45,10 @@ while is_on:
     elif menu.find_drink(user_choice) is None:
         print('\033[31mError. Please choose an available option.\033[m')
 
-#    f. ELSE:
-#        i. Get the drink from menu
-#        ii. Check if resources are sufficient
-#        iii. Ask for payment
+    else:
+        beverage = menu.find_drink(user_choice)
+        sufficient_resources = coffee_maker.is_resource_sufficient(beverage)
+        sufficient_money = money_machine.make_payment(beverage.cost)
 #        iv. If both checks pass:
 #            - Simulate coffee brewing with sleep
 #            - Make coffee
