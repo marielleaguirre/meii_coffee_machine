@@ -19,7 +19,13 @@ class CoffeeMaker:
                 can_make = False
         return can_make
 
-#     METHOD make_coffee(order):
-#         FOR each ingredient in order:
-#             SUBTRACT required amount from resources
-#         PRINT cup art with "Here's your [drink name]. Enjoy!"
+    def make_coffee(self, order):
+        for item in order.ingredients:
+            self.resources[item] -= order.ingredients[item]
+        print(f'''
+             )))
+            (((
+          +------+
+          | 𝒎𝒆𝒊𝒊 |] - Here's your {order.name}. Enjoy! :)
+          `------'
+        ''')
