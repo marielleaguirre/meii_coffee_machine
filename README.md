@@ -18,7 +18,7 @@ Welcome to the **Meii Coffee Machine**, a fun and immersive terminal-based coffe
 ```
 ## 🐾 Credits & Inspiration
 This project was heavily inspired by and referenced from:
-👉 barbaracalderon/coffee-machine-project 
+👉 (https://github.com/barbaracalderon/oop-coffee-machine-project)
 
          )))
         (((  
