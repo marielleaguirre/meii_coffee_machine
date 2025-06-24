@@ -42,9 +42,8 @@ while is_on:
     elif user_choice == 'report':
         coffee_maker.report()
         money_machine.report()
-
-#    e. ELSE IF invalid choice:
-#        - Show error message
+    elif menu.find_drink(user_choice) is None:
+        print('\033[31mError. Please choose an available option.\033[m')
 
 #    f. ELSE:
 #        i. Get the drink from menu
