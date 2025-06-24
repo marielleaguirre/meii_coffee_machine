@@ -12,8 +12,8 @@ class MoneyMachine:
         self.profit = 0
         self.money_received = 0
 
-#     METHOD report():
-#         PRINT current profit with currency symbol
+    def report(self):
+        print(f"Money: {self.CURRENCY}{self.profit}")
 
 #     METHOD process_coins():
 #         PRINT accepted coin types
