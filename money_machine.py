@@ -26,8 +26,8 @@ class MoneyMachine:
         print(f'You have provided: {self.CURRENCY}{self.money_received}')
         return self.money_received
 
-#     METHOD make_payment(cost):
-#         CALL process_coins()
+    def make_payment(self, cost):
+        self.process_coins()
 #         IF money_received >= cost:
 #             CALCULATE change
 #             PRINT change returned
