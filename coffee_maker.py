@@ -1,6 +1,10 @@
-# CLASS CoffeeMaker:
-#     METHOD __init__():
-#         SET initial resources: water = 1000ml, milk = 1000ml, coffee = 500g
+class CoffeeMaker:
+    def __init__(self):
+        self.resources = {
+            "water": 1000,
+            "milk": 1000,
+            "coffee": 500,
+        }
 
 #     METHOD report():
 #         PRINT current amount of water, milk, and coffee
