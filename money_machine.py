@@ -15,8 +15,12 @@ class MoneyMachine:
     def report(self):
         print(f"Money: {self.CURRENCY}{self.profit}")
 
-#     METHOD process_coins():
-#         PRINT accepted coin types
+    def process_coins(self):
+        print('''\033[33m
+        We accept the following coins:
+        Quarters ($0.25), dimes ($0.10)
+        nickles ($0.05), pennies ($0.01)\033[m
+        ''')
 #         FOR each coin type in COIN_VALUES:
 #             ASK user how many of that coin
 #             ADD total value of coins to money_received
