@@ -16,11 +16,11 @@ class Menu:
             MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
         ]
 
-#     METHOD get_items():
-#         SET options to an empty string
-#         FOR each item in the menu:
-#             ADD item name and a slash to options
-#         RETURN options
+    def get_items(self):
+            options = ""
+            for item in self.menu:
+                options += f"{item.name}/"
+            return options
 
 #     METHOD find_drink(order_name):
 #         FOR each item in the menu:
